@@ -1,0 +1,23 @@
+img{
+    width: 100%;
+    margin-top: 20px;
+
+}
+.row{
+    padding: 20px;
+    
+}
+
+
+
+
+@media (min-width: 576px) {
+#fotoDePerfil{
+    position: absolute;
+    border-radius: 100%;
+    width: 15%;
+    top: 350px;
+    left: 5%;
+}
+
+}
