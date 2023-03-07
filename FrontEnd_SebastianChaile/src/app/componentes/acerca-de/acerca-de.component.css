@@ -11,12 +11,12 @@ img{
 
 
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
 #fotoDePerfil{
     position: absolute;
     border-radius: 100%;
     width: 15%;
-    top: 350px;
+    top: 550px;
     left: 5%;
 }
 
