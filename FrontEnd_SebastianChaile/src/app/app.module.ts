@@ -14,6 +14,8 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HysComponent } from './componentes/hys/hys.component';
 import { ProyectoComponent } from './componentes/proyecto/proyecto.component';
 
+import{HttpClient, HttpClientModule} from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +32,8 @@ import { ProyectoComponent } from './componentes/proyecto/proyecto.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgCircleProgressModule.forRoot({})
+    NgCircleProgressModule.forRoot({}),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
