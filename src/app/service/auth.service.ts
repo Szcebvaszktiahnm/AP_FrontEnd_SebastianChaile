@@ -16,10 +16,10 @@ export class AuthService {
   constructor(private httpClient:HttpClient) { }
 
   public nuevo(nuevoUsuario:NuevoUsuario):Observable<any>{
-    return this.httpClient.post<any>(this.aURL+'nuevo', nuevoUsuario);
+    return this.httpClient.post<any>(this.aURL+'nuevo',nuevoUsuario);
   }
 
-  public login(LoginUsuario:LoginUsuario):Observable<JwtDto>{
-    return this.httpClient.post<JwtDto>(this.aURL+'login', LoginUsuario)
+  public login(loginUsuario:LoginUsuario):Observable<JwtDto>{
+    return this.httpClient.post<JwtDto>(this.aURL+'login',loginUsuario)
 }
 }

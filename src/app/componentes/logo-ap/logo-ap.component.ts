@@ -28,7 +28,7 @@ constructor(private router:Router,private tokenService: TokenService){}
   }
 
   login(){
-    this.router.navigate(['/login'])
+    this.router.navigate(['/login']);
   }
 
 }
