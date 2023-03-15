@@ -9,15 +9,15 @@ import { TokenService } from 'src/app/service/token.service';
   styleUrls: ['./experiencias.component.css']
 })
 export class ExperienciasComponent implements OnInit {
-  expe: Experiencia[]=[];
+  expe:Experiencia[]=[];
 
   constructor(private sExperiencia:SExperienciaService,private tokenService:TokenService){}
 
-  isLogged = false;
+  isLogged=false;
 
-  ngOnInit(): void {
+  ngOnInit():void {
     this.cargarExperiencia();
-    if (this.tokenService.getToken()) {
+    if (this.tokenService.getToken()){
       this.isLogged = true;
     } else {
       this.isLogged=false;
@@ -28,15 +28,17 @@ export class ExperienciasComponent implements OnInit {
     this.sExperiencia.lista().subscribe(data => { this.expe = data; })
   }
 
+
+
   delete(id?: number){
     if(id != undefined){
-      this.sExperiencia.delete(id).subscribe({
-        next:(data) => {
+      this.sExperiencia.delete(id).subscribe(
+        data => {
           this.cargarExperiencia();
-        }, error:(err) => {
-          alert("No se borro la experiencia");
+        }, err => {
+          alert("No se pudo borrar la experiencia");
         }
-      });
+      )
     }
   }
 }

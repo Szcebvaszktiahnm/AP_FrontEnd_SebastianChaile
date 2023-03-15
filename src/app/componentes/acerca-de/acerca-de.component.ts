@@ -13,9 +13,7 @@ export class AcercaDeComponent implements OnInit {
   constructor(public personaService: PersonaService){};
 
   ngOnInit(): void {
-    this.personaService.getPersona().subscribe({
-      next:(data) =>{this.persona = data}, 
-      error:(err)=>{}
-    });
+    this.personaService.getPersona().subscribe(data => {this.persona = data})
   }
+
 }
