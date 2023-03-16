@@ -2,3 +2,7 @@
     padding: 20px;
     background-color:lightskyblue;
 }
+
+h5,h3{
+    display: inline;
+}
