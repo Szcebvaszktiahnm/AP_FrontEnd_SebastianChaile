@@ -9,7 +9,7 @@ import { Educacion } from '../model/educacion';
 })
 export class EducacionService {
 
-    eduURL = '';
+    //eduURL = '';
     URL = environment.URL + 'educacion/';
 
   
