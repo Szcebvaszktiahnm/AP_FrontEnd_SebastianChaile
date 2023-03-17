@@ -15,7 +15,7 @@ export const environment = {
   },
 
     production: false,
-    URL: 'https://backendszk.onrender.com'
+    //URL: 'https://backendszk.onrender.com/'
   };
   
   /*

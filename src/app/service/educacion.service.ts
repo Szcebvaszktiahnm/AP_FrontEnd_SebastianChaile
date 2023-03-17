@@ -10,7 +10,9 @@ import { Educacion } from '../model/educacion';
 export class EducacionService {
 
     //eduURL = '';
-    URL = environment.URL + 'educacion/';
+    //URL = environment.URL + 'educacion/';
+    
+    URL = 'https://backendszk.onrender.com/educacion/';
 
   
     constructor(private httpClient : HttpClient) { }

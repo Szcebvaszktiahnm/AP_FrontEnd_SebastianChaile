@@ -10,7 +10,7 @@ import { persona } from '../model/persona.model';
   providedIn: 'root'
 })
 export class PersonaService {
-  URL = environment.URL + 'personas/';
+  URL = 'https://backendszk.onrender.com/personas/';
   constructor(private httpClient : HttpClient) { }
 
   public lista(): Observable<persona[]>{

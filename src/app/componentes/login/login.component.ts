@@ -55,6 +55,7 @@ export class LoginComponent implements OnInit {
         console.log("Error");
         this.errMsj=err.error.mensaje;
         console.log(this.errMsj); 
+        this.router.navigate(['']);
         if(this.isLogged==false){
           console.log("no lo trusea");
         }
