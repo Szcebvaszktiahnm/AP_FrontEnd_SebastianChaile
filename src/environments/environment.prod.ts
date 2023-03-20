@@ -10,7 +10,7 @@ export const environment = {
     messagingSenderId: '731355342114',
     measurementId: 'G-E6J8MPSDWJ',
   },
-    production: false,
-    URL: 'https://localhost:8080/'
-    //URL:'https://backendszk.onrender.com/'
+    production: true,
+    //URL: 'https://localhost:8080/'
+    URL:'https://backendszk.onrender.com/'
   };
