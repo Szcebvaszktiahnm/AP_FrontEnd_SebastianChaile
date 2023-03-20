@@ -28,10 +28,6 @@ export class LoginComponent implements OnInit {
       this.roles=this.tokenService.getAuthorities();
     }
   }
-
-  /*subscribe(next?: ((value: T) => void) | null, error?: ((error: any) => void) | null, complete?: (() => void) | null): Subscription;*/
-
-
   
   onLogin():void{
     this.loginUsuario=new LoginUsuario(this.nombreUsuario,this.password); 

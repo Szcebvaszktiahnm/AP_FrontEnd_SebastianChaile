@@ -1,15 +1,19 @@
 <div class="row" id="educacion">
-    <h1>Educacion</h1>
+    <h1>Educación</h1>
     <div class="col-lg-2">
         <button type="button" class="btn btn-primary" routerLink="/nuevaedu" *ngIf="isLogged">
-            Agregar Educacion
+            Agregar Educación
         </button>
     </div>
 
-    <div class="col lg 1"></div>
+
     <div class="col-lg-11">
         <table class="table">
             <tbody>
+                <tr>
+                    <td><h2>Institución</h2></td>
+                    <td><h2>Carrera / Curso</h2></td>
+                </tr>
                 <tr *ngFor="let Educacion of educacion">
                     <td>
                         <h3>{{Educacion.nombreE}}</h3>

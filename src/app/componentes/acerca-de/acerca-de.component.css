@@ -8,7 +8,9 @@ img{
     
 }
 
-
+.descripcion{
+    text-align: center;
+}
 
 
 @media (max-width: 576px) {
@@ -16,8 +18,20 @@ img{
     position: absolute;
     border-radius: 100%;
     width: 15%;
+    top: 643px;
+    left: 75%;
+}
+}
+@media(max-width: 576px){#editperfil{
+    position: absolute;
+    border-radius: 100%;
+    width: 15%;
     top: 550px;
-    left: 5%;
+    left: 75%;
+    
+}
+.descripcion{
+    text-align: left;
 }
 
 }

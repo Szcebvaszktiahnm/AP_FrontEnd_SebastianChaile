@@ -1,4 +1,4 @@
-<div class="alert bg-success border border-dark border-3 rounded-4 container" *ngIf="persona">
+<div class="alert bg-primary border border-dark border-3 rounded-4 container" *ngIf="persona">
     <div class="row">
         <div>
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
@@ -21,8 +21,12 @@
                 </div>
                 <p></p>
 
+                <div class="imagen">
+                    <img [src]="imageService.url" width="200px">
+                </div>
+
                 <br>
-                <button class="btn btn-outline-light btn-lg px-5 text-black">
+                <button class="btn btn-outline-light btn-lg px-5 text-black" id="btnedit" >
                     Editar persona
                 </button>
             </form>

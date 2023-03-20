@@ -11,7 +11,10 @@ import { PersonaService } from 'src/app/service/persona.service';
 })
 export class EditAcercaDeComponent implements OnInit {
   persona: persona = null;
-  constructor(private activatedRouter: ActivatedRoute, private personaService: PersonaService, private router: Router,public imageService:ImageService) { }
+  constructor(private activatedRouter: ActivatedRoute,
+              private personaService: PersonaService,
+              private router: Router,
+              public imageService:ImageService) { }
 
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];
@@ -40,6 +43,8 @@ export class EditAcercaDeComponent implements OnInit {
   
 
   uploadImage($event:any){
-    this.imageService.uploadImage($event);
+    const id=this.activatedRouter.snapshot.params['id'];
+    const name="perfil_"+id;
+    this.imageService.uploadImage($event,name);
   }
 }

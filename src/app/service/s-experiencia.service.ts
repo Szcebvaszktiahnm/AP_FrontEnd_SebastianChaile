@@ -10,7 +10,8 @@ import { Experiencia } from '../model/experiencia';
 export class SExperienciaService {
 
   //expURL = '';
-  URL = 'https://backendszk.onrender.com/explab/';
+  URL='http://localhost:8080/explab/';
+  //URL = 'https://backendszk.onrender.com/explab/';
 
   constructor(private httpClient: HttpClient){}
 
